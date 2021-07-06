@@ -1,6 +1,15 @@
 # 💻 Tech Flashcard App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Helping you study tech, one flashcard at a time.
+
+# 🔨 Tools Used
+
+- React
+- React-DOM
+- Python/Django
+- Django Rest API
+- Semantic UI
+- CSS
 
 ## Available Scripts
 
