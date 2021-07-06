@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import FixedMenuLayout from './components/NavBar/NavBar';
+import Main from './components/Main/Main';
+import Footer from './components/Footer/Footer';
+import { Container } from 'semantic-ui-react'
 
-function App() {
+const App = () => {
+
+
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <FixedMenuLayout />
+      <Route exact path='/'>
+        <Main />
+      </Route>
+      <Route path='/card-collections'>
+        
+      </Route>
+      <Route path='/cards'>
+        
+      </Route>
+      </Router>
+      
     </div>
   );
 }
