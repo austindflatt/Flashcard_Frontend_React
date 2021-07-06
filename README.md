@@ -5,8 +5,12 @@ Helping you study tech, one flashcard at a time.
 # 🔨 Tools Used
 
 - React
+- Create React App
+- Axios
 - Python/Django
 - Django Rest API
+- MySQL
+- HTML
 - Semantic UI
 - CSS
 
