@@ -11,7 +11,11 @@ Helping you study tech, one flashcard at a time.
 - Semantic UI
 - CSS
 
-## Available Scripts
+# ✨ Live Demo
+
+See it live here.
+
+## 🚀 Getting Started
 
 In the project directory, you can run:
 
