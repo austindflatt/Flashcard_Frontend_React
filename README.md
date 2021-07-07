@@ -1,8 +1,24 @@
-# Getting Started with Create React App
+# 💻 Tech Flashcard App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Helping you study tech, one flashcard at a time.
 
-## Available Scripts
+# 🔨 Tools Used
+
+- React
+- Create React App
+- Axios
+- Python/Django
+- Django Rest API
+- MySQL
+- HTML
+- Semantic UI
+- CSS
+
+# ✨ Live Demo
+
+See it live here.
+
+## 🚀 Getting Started
 
 In the project directory, you can run:
 
