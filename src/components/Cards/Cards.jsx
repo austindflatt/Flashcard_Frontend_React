@@ -98,14 +98,14 @@ const Cards = () => {
         let count = currentCard.currentCard + 1;
 
         if(cardDeck.length === 0){
-            return (<p className="card__question-individual">Select a technology</p>)
+            return (<p>Select a technology</p>)
         }
         else{
             if(!currentCard.isFlipped){
-                return (<div><span>{count}/{cardDeck.length}</span><p className="card__question-individual">{cardDeck[currentCard.currentCard].card_question}</p></div>)
+                return (<div><span>{count}/{cardDeck.length}</span><p>{cardDeck[currentCard.currentCard].card_question}</p></div>)
             }
             if(currentCard.isFlipped){
-                return (<div><span>{count}/{cardDeck.length}</span><p className="card__answer-individual">{cardDeck[currentCard.currentCard].card_answer}</p></div>)
+                return (<div><span>{count}/{cardDeck.length}</span><p>{cardDeck[currentCard.currentCard].card_answer}</p></div>)
             }   
         }
     }
