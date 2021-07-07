@@ -9,13 +9,12 @@ import {
     <div>
       <Menu fixed='top' inverted>
         <Container>
-          <Menu.Item as='a' header>
-            <Image size='mini' src='https://react.semantic-ui.com/logo.png' style={{ marginRight: '1.5em' }} />
-            Flashcard App
+          <Menu.Item header>
+          🧠 Tech Flashcard App
           </Menu.Item>
-          <Menu.Item as='a'>Home</Menu.Item>
-          <Menu.Item as='a'>Collections</Menu.Item>
-          <Menu.Item as='a'>Account</Menu.Item>
+          <Menu.Item href='/'>Home</Menu.Item>
+          <Menu.Item href='/card-collections'>Collections</Menu.Item>
+          <Menu.Item href='/cards'>Cards</Menu.Item>
         </Container>
       </Menu>
     </div>
