@@ -2,6 +2,8 @@
 
 Helping you study tech, one flashcard at a time.
 
+Backend: https://github.com/austindflatt/Flashcard_Backend
+
 # 🔨 Tools Used
 
 - React
