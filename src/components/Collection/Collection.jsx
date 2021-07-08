@@ -117,11 +117,10 @@ let selectedCollectionCards = [];
             <Dropdown
     placeholder='Select a technology to study'
     fluid
-    selection={collectionSelect}
+    selection={getAllCollections}
     />
   </Container>
-            </div>
-          
+            </div> 
     )
 }
 

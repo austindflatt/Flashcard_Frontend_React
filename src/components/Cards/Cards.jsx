@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import AppFunctions from '../../requests';
-import { Container, Dropdown } from 'semantic-ui-react'
+import { Container, Dropdown, Button, Message, Segment, Header, Image, Modal, Form } from 'semantic-ui-react'
 
 
 const Cards = () => {
@@ -154,11 +154,57 @@ const Cards = () => {
         }
     }
 
+    const [open, setOpen] = React.useState(false)
+
 
     return (
         <div>
             <Container>
-            <h2>{selectedCollection.collectionName}</h2>
+            <Message info>
+            <Modal
+      onClose={() => setOpen(false)}
+      onOpen={() => setOpen(true)}
+      open={open}
+      trigger={<Button color='purple' size='huge'>Add Flashcard</Button>}
+    >
+      <Modal.Header>Create a flashcard</Modal.Header>
+      <Modal.Content image>
+        <Modal.Description>
+          <Form>
+    <Form.Field>
+    <Form.Selectz
+            fluid
+            label='Collection'
+            options={null}
+            placeholder='Collection'
+          />
+    </Form.Field>
+    <Form.Field>
+      <label>Question</label>
+      <input placeholder='Question' />
+    </Form.Field>
+    <Form.Field>
+      <label>Answer</label>
+      <input placeholder='Answer' />
+    </Form.Field>
+    <Button type='submit'>Create</Button>
+  </Form>
+        </Modal.Description>
+      </Modal.Content>
+      <Modal.Actions>
+        <Button color='black' onClick={() => setOpen(false)}>
+          Close
+        </Button>
+        <Button
+          content="Finished"
+          labelPosition='right'
+          icon='checkmark'
+          onClick={() => setOpen(false)}
+          positive
+        />
+      </Modal.Actions>
+    </Modal>
+            </Message>
             </Container>
         </div>
     )
